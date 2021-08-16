@@ -1,0 +1,31 @@
+g++ -std=c++14 -Wall -c Matrix.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -L/Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 -Wall -c Fourierseries.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -L/Users/m-store/Downloads/OpenBLAS/install/include/
+
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 -Wall -c ob.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+
+OpenBLAS/your_installation_directory/include/ -L/Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 -Wall -c simulate.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -Lg++ -std=c++14 -Wall -c simulate.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 -Wall -c estimation.cpp -I  /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -L /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/your_installation_directory/include/ g++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+
+g++ -std=c++14 Matrix.o ob.o -o test1 -I g++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -Lg++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 Matrix.o Fourierseries.o simulate.o -o test2 -I g++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+OpenBLAS/your_installation_directory/include/ -Lg++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 Matrix.o Fourierseries.o estimation.o -o test3 -I g++ -std=c++14 -Wall -c verify.cpp -I /Users/m-store/Downloads/OpenBLAS/install/include/
+OpenBLAS/your_installation_directory/include/ -L/Users/m-store/Downloads/OpenBLAS
+your_installation_directory/lib/ -lopenblas  -lgfortran
+g++ -std=c++14 Matrix.o verify.o -o test4 -I /Users/m-store/Downloads/OpenBLAS/install/include/
+your_installation_directory/include/ -L/Users/m-store/Downloads/OpenBLAS/install/include/your_installation_directory/lib/ -lopenblas  -lgfortran
